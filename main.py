@@ -3,7 +3,10 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 import requests
 from PIL import Image, ImageEnhance
 from io import BytesIO
-import logging
+import logging 
+from keep_alive import keep_alive
+
+keep_alive()
 
 # Enable logging for better debug information
 logging.basicConfig(level=logging.INFO)
